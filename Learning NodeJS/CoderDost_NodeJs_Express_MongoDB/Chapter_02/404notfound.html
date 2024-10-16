@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Not Found</title>
+    <style>
+      body {
+        width: 99vw;
+        height: 99vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .border {
+        border: 5px solid red;
+        width: clamp(20rem, 50vw, 30rem);
+        height: clamp(7rem, 30vh, 12rem);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="border">
+      <strong>404</strong>
+      <p>Page Not Found</p>
+    </div>
+  </body>
+</html>

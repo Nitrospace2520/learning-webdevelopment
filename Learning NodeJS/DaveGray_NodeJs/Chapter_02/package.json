@@ -1,0 +1,14 @@
+{
+  "name": "chapter-02",
+  "version": "1.0.0",
+  "description": "Read and Write Files",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "nir": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Nirmalya Dhara",
+  "license": "ISC"
+}

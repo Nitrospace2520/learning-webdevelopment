@@ -1,0 +1,17 @@
+{
+  "name": "basicnodejswithexpressjs",
+  "version": "1.0.0",
+  "description": "a basic chapter where we learn expressjs with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Nir Dhara",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        background: #000;
+        color: #fff;
+        min-height: 100vh;
+        font-size: 1.2rem;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        padding: 2rem;
+        margin-top: 0.5rem;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #fff;
+        background-color: #071041;
+      }
+      label {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+      input {
+        padding: 7px;
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+      button {
+        padding: 9px;
+        font-size: 1.5rem;
+        background-color: #0b1b72;
+        color: #fff;
+        border: 1px solid #071041;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+      button:hover {
+        background-color: #1531ce;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      p.message {
+        color: red;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form action="/api/user/login" method="POST">
+      <% if (locals.message) { %>
+      <p class="message"><%= locals.message %></p>
+      <% } %>
+      <label for="email"
+        >Email:
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="john@doe.com"
+          aria-label="Enter your email"
+        />
+      </label>
+      <br />
+      <label for="password"
+        >Password:
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          placeholder="******"
+          aria-label="Enter your password"
+        />
+      </label>
+      <br />
+      <button type="submit">Login</button>
+      <br />
+      <p>Don't have an account? <a href="/signup">Signup</a></p>
+    </form>
+  </body>
+</html>

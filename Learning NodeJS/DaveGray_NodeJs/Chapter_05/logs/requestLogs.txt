@@ -1,0 +1,9 @@
+530dca6a-3974-41e5-ad31-16224350d5b8	2024-02-25  03-26-50	GET  undefined  /
+c847c21e-3c0c-48b4-9923-ceb52fd01ef3	2024-02-25  03-26-50	GET  undefined  /css/style.css
+5c5f765c-430c-46c3-a19c-470613f46073	2024-02-25  03-30-51	GET  undefined  /
+58799610-8cd0-4114-9cf8-026d17d3cd52	2024-02-25  03-31-12	GET  undefined  /
+c38ef2a4-013b-411b-832e-a2ef64939991	2024-02-25  03-31-12	GET  undefined  /css/style.css
+8c626c88-83eb-4586-bc85-91f870f762f2	2024-02-25  03-38-42	GET  undefined  /
+9e2cfca2-fdaf-4178-acc7-7ac5f5d904ce	2024-02-25  03-38-42	GET  undefined  /css/style.css
+5862387a-6ab6-4e52-a55e-3759a733eac4	2024-02-25  03-38-55	GET  undefined  /battery
+669e5588-d4f8-4c26-94c9-2eeddc4bb203	2024-02-25  03-38-55	GET  undefined  /css/style.css

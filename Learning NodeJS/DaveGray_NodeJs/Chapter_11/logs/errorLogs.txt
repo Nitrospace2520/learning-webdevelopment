@@ -1,0 +1,2 @@
+1fcd0fdd-3734-457d-a6e6-20a680998e5e	2024-03-02  11-52-20	TypeError: Cannot read properties of undefined (reading 'username')
+5a8b80e5-2562-453d-9115-1fbf25a82ac2	2024-03-03  02-13-38	TypeError: allowedOrigins.includes is not a function
