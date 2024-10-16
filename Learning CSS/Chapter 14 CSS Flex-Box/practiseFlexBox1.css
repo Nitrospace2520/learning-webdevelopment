@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(93, 124, 216);
+  color: rgb(0, 0, 29);
+}
+.container {
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  min-width: 800px;
+  min-height: 400px;
+  gap: 1rem;
+  margin-inline: auto;
+  justify-content: flex-start;
+  /* align-content: flex-end; */
+  align-items: center;
+}
+.container .box {
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
+  text-align: center;
+  border: 1px solid purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

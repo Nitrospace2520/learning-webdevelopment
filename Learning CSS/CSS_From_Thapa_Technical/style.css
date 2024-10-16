@@ -1,0 +1,86 @@
+* {
+  /* scroll-behavior: smooth; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+/* @font-face {
+  font-family: "nir-font";
+  src: url("https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap");
+} */
+body {
+  background-color: #f0f0f0;
+  font-family: /* "nir-font", */ "Roboto", sans-serif;
+  /* font-family: "Bungee Tint", sans-serif; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #f0f0f0;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f0f0f0;
+  color: #000;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* BACKGROUND */
+  background-attachment: fixed; /* ☑️ */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* FONT STYLE */
+  font-variant: small-caps;
+  /* TEXT */
+  text-shadow: 1px 1px 2px #000;
+  letter-spacing: 1.5px;
+  word-spacing: 2px;
+  line-height: 1.5;
+}
+
+h2::first-letter {
+  font-size: 150%;
+  color: #055;
+}
+
+.page-1 {
+  background-image: url("https://plus.unsplash.com/premium_photo-1683910767532-3a25b821f7ae?q=80&w=808&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    linear-gradient(to top left, #000, #007, #00f);
+  background-blend-mode: difference;
+}
+.page-2 {
+  background-image: url("https://images.unsplash.com/photo-1720884413532-59289875c3e1?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  /* radial-gradient(circle, #007 0%, #070 25%, #700 50%, #00f 75%, #0f0 100%); */
+  /* background-blend-mode: overlay; */
+  filter: grayscale(75%);
+}
+.page-3 {
+  color: #f0f0f0;
+  background-image: url("https://images.pexels.com/photos/18999918/pexels-photo-18999918/free-photo-of-a-forest-with-trees-and-leaves-on-the-ground.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
+    radial-gradient(#000, #077, #0ff);
+  background-blend-mode: overlay;
+}
+.page-4 {
+  background-image: url("https://images.unsplash.com/photo-1716872491368-cbef5a6b0532?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  /* background-blend-mode: screen; */
+  filter: sepia(50%);
+}
+.page-5 {
+  background-image: url("https://plus.unsplash.com/premium_photo-1716845059757-8cad6ef73b39?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"),
+    linear-gradient(345deg, #000, #077, #0ff);
+  background-blend-mode: luminosity;
+  border-radius: 60% 40% 42% 58% / 58% 53% 47% 42%;
+}
+/* https://9elements.github.io/fancy-border-radius/#58.60.53.58--. */

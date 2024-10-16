@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-variant: small-caps;
+  text-shadow: 1px 1px 2px #000;
+  letter-spacing: 1.5px;
+  word-spacing: 2px;
+  line-height: 1.5;
+  background-image: linear-gradient(to top left, #000, #007, #00f);
+  width: 100%;
+  position: relative;
+
+  /* Nesting in CSS *
+  & .circle {
+    aspect-ratio: 1/1;
+    background-color: #353333;
+    border-radius: 50%;
+    margin: 10px auto;
+    box-shadow: 1px 1px 5px 2px #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition: all 3s; *
+
+    &::after {
+      content: "*";
+    }
+    &:hover {
+      transform: scale(1.5);
+      cursor: pointer;
+    }
+  }
+
+  & .circle-1 {
+    background-color: #0f0;
+    width: 125px;
+    perspective: 1000px;
+    writing-mode: vertical-lr;
+    /* animation: earth 3s linear infinite; *
+  }
+  & .circle-2 {
+    background-color: #f00;
+    width: 200px;
+    perspective: 1000px;
+    /* transition: all 3s; *
+    /* animation: sun 3s linear infinite; *
+  }
+}
+
+.circle-3 {
+  background-color: #fff;
+  width: 75px;
+}
+/*! Animations  *
+@keyframes sun {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes earth {
+  0% {
+    transform: rotate(0deg) translateY(360px) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateY(360px) rotate(-360deg);
+  }
+} */
+
+/*! Transition */
+/* .circle-1:hover {
+  transform-origin: left;
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+.circle-2:hover {
+  transform-origin: left;
+  transform: rotate(360deg) skew(45deg);
+  cursor: pointer;
+}
+.circle-3:hover {
+  transform: rotate(360deg);
+  cursor: pointer;
+} */
+
+/* 
+.circle-1:hover {
+  transform: translateX(90vw);
+  transition-timing-function: ease;
+  cursor: pointer;
+}
+.circle-2:hover {
+  transform: translateX(90vw);
+  transition-timing-function: ease-in;
+  cursor: pointer;
+}
+.circle-3:hover {
+  transform: translateX(90vw);
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+.circle-4:hover {
+  transform: translateX(90vw);
+  transition-timing-function: linear;
+  cursor: pointer;
+}
+.circle-5:hover {
+  transform: translateX(90vw);
+  transition-timing-function: steps(5, end);
+  cursor: pointer;
+}
+ */
+
+/* How to center a div */
+main {
+  height: 100vh;
+  background-color: #f5f5f5;
+  background-image: linear-gradient(to top left, #000, #007, #00f);
+  position: relative;
+}
+section {
+  width: 100px;
+  height: 100px;
+  /* aspect-ratio: 1/1; */
+  background-color: #555;
+  border-radius: 10%;
+  box-shadow: 1px 1px 5px 2px #000;
+}
+
+/* Method: 01 *
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* Method: 02 *
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+*/
+
+/* Method: 03 *
+main {
+  display: grid;
+  place-items: center;
+}
+*/
+
+/* Method: 04 *
+main {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* Method: 05 *
+main {
+  display: flex;
+}
+section {
+  margin: auto;
+}
+*/

@@ -1,0 +1,189 @@
+* {
+  /* padding: 0;
+  margin: 0; */
+  box-sizing: border-box;
+}
+body {
+  /* background-color: black;
+  color: whitesmoke; */
+  font-size: 1.5rem;
+  /* line-height: 1.5rem; */
+  min-height: 200vh;
+}
+/* ! CSS Display:-
+ul {
+  background-color: #000;
+  color: whitesmoke;
+  text-align: right;
+  list-style-type: none;
+  padding: 0.5rem;
+}
+ul li {
+  display: inline-block;
+  margin-inline: 0.5rem;
+}
+nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+  border: 1px solid black;
+  color: black;
+  background-color: whitesmoke;
+}
+*/
+/* ! CSS Floats:- *
+.block {
+  background-color: black;
+  height: 20vw;
+  width: 20vw;
+  padding: 2rem;
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 9vw;
+}
+.left {
+  float: left;
+  margin-right: 10px;
+}
+.right {
+  float: right;
+  margin-left: 10px;
+}
+section {
+  background-color: burlywood;
+  border: 1px solid brown;
+  /* overflow: auto; **
+  display: flow-root; /* Use in Modern CSS for control overflow **
+}
+*/
+/* ! CSS Columns:- *
+section.columns {
+  /* column-count: 4;
+  column-width: 250px; **
+  columns: 4 250px;
+  column-gap: 3rem;
+  column-rule: 2px solid rebeccapurple;
+}
+.columns p {
+  margin-top: 0;
+  background-color: bisque;
+}
+.columns .quote {
+  text-align: center;
+  font-style: italic;
+  column-span: all;
+}
+.quote span.no-break {
+  white-space: nowrap;
+}
+.columns h3 {
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+  margin-top: 0;
+  padding: 1rem;
+  break-inside: avoid; /* 'break' properties **
+  /* break-before: column; **
+}  */
+/* ! CSS Positions:- *
+.outer-container {
+  border: 3px dotted black;
+  width: 75vw;
+  height: 85vh;
+  margin: 40px auto;
+  /* position: relative; **
+}
+.inner-container {
+  border: 2px solid red;
+  width: 40vw;
+  height: 50vh;
+  margin: 200px auto;
+}
+.box {
+  width: 150px;
+  height: 100px;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+.absolute {
+  position: absolute;
+  background-color: aqua;
+  color: whitesmoke;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.relative {
+  position: relative;
+  background-color: red;
+  color: whitesmoke;
+  top: 100px;
+  left: 150px;
+}
+.fixed {
+  position: fixed;
+  background-color: forestgreen;
+  color: whitesmoke;
+  top: 100px;
+  z-index: 1;
+}
+.sticky {
+  position: sticky;
+  background-color: sandybrown;
+  color: whitesmoke;
+  top: 0px;
+} *
+/* ? Example: 01 *
+html {
+  scroll-behavior: smooth;
+}
+.social {
+  position: fixed;
+  background-color: royalblue;
+  color: aliceblue;
+  top: 25%;
+  z-index: 1;
+}
+section {
+  height: 100vh;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+header {
+  padding: 1.5rem;
+  text-align: center;
+  color: whitesmoke;
+  position: sticky;
+  top: 0;
+}
+footer {
+  background-color: black;
+  position: sticky;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0%;
+  left: 40%;
+  z-index: 1;
+}
+footer a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+footer a:hover,
+footer a:active {
+  background-color: white;
+  color: black;
+  padding: 0.7rem;
+}
+*/

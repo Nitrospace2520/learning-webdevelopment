@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+:root {
+  --BGCOLOR-RED: #f00;
+  --BGCOLOR-GREEN: #0f0;
+  --BGCOLOR-BLUE: #00f;
+  --DARK-COLOR: #000;
+  --LIGHT-COLOR: #f5f5f5;
+
+  --HEIGHT: clamp(100px, 20vh, 200px);
+  --WIDTH: clamp(100px, 20vw, 200px);
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+div {
+  height: var(--HEIGHT);
+  width: var(--WIDTH);
+  border: 1px solid #000;
+  display: grid;
+  place-content: center;
+}
+.square:first-child {
+  background-color: var(--BGCOLOR-BLUE);
+  /* transform: translateX(-50%); */
+  /* transform: rotateX(60deg); */
+  /* transform: skewX(-30deg); */
+  /* transform: scaleX(120%); */
+}
+.square:nth-child(2) {
+  background-color: var(--BGCOLOR-GREEN);
+  /* transform: translateY(-2rem); */
+  /* transform: rotateY(45deg); */
+  /* transform: skewY(30deg); */
+  /* transform: scaleY(50%); */
+}
+.square:last-child {
+  background-color: var(--BGCOLOR-RED);
+  /* transform: translate(50%, -50%); */
+  /* transform: rotateZ(30deg); */
+  /* transform: skew(25deg, 25deg); */
+  /* transform: scale(50%, -150%); */
+}
+.square:first-child:hover {
+  /*? Transition Property */
+  background-color: #00b3ff;
+  border-radius: 50%;
+  transform: translate(50%);
+  box-shadow: 0px 10px 5px 3px #002078;
+  /* transition-property: background-color, border-radius, transform;
+  transition-duration: 3s, 4s, 5s;
+  transition-delay: 0.3s;   
+  transition-timing-function: ease; OR */
+  transition: all 3s ease 0.3s;
+}
+.square:nth-child(2):hover {
+  background-color: #006400;
+  border-radius: 50%;
+  transform: skew(-45deg);
+  box-shadow: 1px 15px 5px 3px yellowgreen;
+  transition-property: background-color, border-radius, transform;
+  transition-duration: 3s, 5s, 7s;
+  transition-delay: 0.4s;
+}
+.square:last-child:hover {
+  background-color: #8b0000;
+  border-radius: 50%;
+  transform: scale(120%);
+  transition-property: background-color, border-radius, transform;
+  transition-duration: 3s, 5s, 2s;
+  transition-delay: 0.5s;
+}
+.animate {
+  border-radius: 50%;
+  box-shadow: 1px 15px 5px 3px #cd8532;
+  /* animation-name: infinity;
+  animation-duration: 7s;
+  animation-delay: 1s;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-direction: normal; */
+  animation: 7s 1s 2 ease-in-out forwards normal infinity;
+}
+@keyframes infinity {
+  0% {
+    transform: translateX(150%) rotate(180deg); /* rotate(180deg); */
+    transition-property: transform;
+    /* transition-duration: 10s, 5s;
+    transition-delay: 0.5s; */
+  }
+  25% {
+    transform: rotate(180deg) translateY(150%);
+    transition-property: transform;
+    /* transition-duration: 5s, 4s;
+    transition-delay: 0.5s; */
+  }
+  50% {
+    transform: rotate(-180deg) translate(-150%);
+    transition-property: transform;
+    /* transition-duration: 5s; */
+  }
+  75% {
+    transform: translateY(0%) rotate(180deg);
+    transition-property: transform;
+    /* transition-duration: 5s; */
+  }
+  100% {
+    transform: rotate(0deg);
+    transition-property: transform;
+    /* transition-duration: 5s; */
+  }
+}

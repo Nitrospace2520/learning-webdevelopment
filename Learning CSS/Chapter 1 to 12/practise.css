@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*? CSS Box Model
+header nav ul li {
+  display: inline-block;
+  text-align: center;
+  border: 2px solid black;
+  padding: 2px;
+  background-color: darkblue;
+  color: whitesmoke;
+}
+nav h3,
+nav ul {
+  display: inline-block;
+  text-align: left;
+  margin: 2px auto;
+}
+nav h3 {
+  width: 500px;
+  margin-left: 1rem;
+}
+nav ul {
+  width: 400px;
+  text-align: right;
+  padding: 0.5rem;
+}
+main article {
+  margin: 10px;
+  border: 3px double black;
+  padding: 2rem;
+  outline: 5px solid blue;
+  outline-offset: 2px;
+}
+article h1 {
+  width: 40%;
+  border-bottom: 2px solid black;
+}
+article .circle {
+  background-color: rgb(249, 95, 6);
+  height: 100px;
+  width: 100px;
+  margin: 2rem auto;
+  border: 2px solid rgb(75, 2, 2);
+  padding: 2rem;
+  border-radius: 3em;
+  outline: 5px double yellow;
+  outline-offset: 10px;
+}
+*/
+/*? CSS Typography *
+main .cssTypography {
+  padding: 10%;
+  font-size: 1.5rem;
+  font-family: sans-serif, "Times New Roman", Times, serif;
+}
+article h1 {
+  text-decoration: underline double blue 2px;
+}
+main article .typography {
+  text-decoration: underline;
+  text-transform: capitalize;
+  /* text-align: right; **
+  text-indent: 4em;
+  /* line-height: 1.2em;
+  letter-spacing: 2.7px;
+  word-spacing: 5px; **
+  /* font-weight: 600; **
+  font-style: italic;
+}
+*/
+/*? CSS Styling Links  *
+body {
+  padding: 10%;
+  font-size: larger;
+  text-indent: 4rem;
+  font-family: sans-serif;
+  line-height: 1.3;
+}
+article h2 {
+  text-align: center;
+  text-decoration: underline double rgb(232, 16, 16) 1px;
+}
+article p.links a {
+  text-decoration: none;
+  color: rgb(6, 27, 184);
+  font-style: italic;
+}
+p.links a:hover,
+p.links a:focus {
+  color: rgb(6, 80, 80);
+  background-color: whitesmoke;
+}
+p.links a:active {
+  color: rgb(236, 28, 28);
+}
+*
+body {
+  padding: 5% 10%;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+ol {
+  /* list-style-type: bengali; **
+  /* list-style-type: upper-roman; **
+  list-style-type: none;
+  padding: 0;
+}
+ul {
+  /* list-style-type: square; **
+  /* list-style-type: none; **
+  list-style: circle inside;
+  /* padding: 0; **
+}
+ul ::marker {
+  color: rgb(246, 8, 8);
+  font-size: larger;
+  font-weight: 700;
+  content: "Only $5 -> ";
+}
+ul li:nth-child(odd) {
+  color: blue;
+}
+*/
+
+/*? Styling the mini projects on styling links and nav bar */
+body {
+  padding: 10%;
+  font-size: larger;
+  font-family: sans-serif;
+  text-align: center;
+}
+body nav {
+  border: 3px solid black;
+  border-radius: 2rem;
+  font-size: 2rem;
+  margin: 0 auto 1rem;
+  max-width: 600px;
+  line-height: 5rem;
+}
+nav h2 {
+  background-color: gold;
+  border-radius: 2rem 2rem 0 0;
+  padding: 1rem;
+}
+ul li a,
+ul li a:visited {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+ul li a:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+nav ul li {
+  border-top: 1px solid black;
+  list-style-type: none;
+}
+nav ul li:last-child a {
+  border-radius: 0 0 2rem 2rem;
+}

@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 1.2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  background-color: color-mix(in srgb, 5% #f5f5f5, 95% #000000);
+}
+.example1 {
+  height: 100vh;
+  border: 2px solid #ffffff;
+}
+.box {
+  width: min(100px, 15vw);
+  height: min(100px, 15vh);
+  border: 2px solid #add8e6;
+  margin: 0.5rem;
+  border-radius: 50%;
+  background-image: linear-gradient(#add8e6, #000000);
+  /* background-color: rgba(0, 0, 0, 0.394); */
+  box-shadow: 0 0 1.2rem 0.5rem #add8e6;
+  /* ? Lets animate this */
+  /*   animation-name: moving;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  animation-fill-mode: running;
+  * OR * */
+  /* animation: moving 10s ease-in-out 0.5s 3 running; */
+}
+.box:hover,
+.box:focus {
+  transform: translate(50%, 50%) scale(1.2);
+  /* background-image: linear-gradient(#f5f5f5, #add8ed); */
+  background-color: #add8e6;
+  transition: all 5s linear;
+}
+@keyframes moving {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translateX(90vw) rotate(360deg); /* min(1200px, 85vw) */
+  }
+  50% {
+    transform: translate(90vw, 90vh) rotate(0deg); /* min(1000px, 95vw), min(1200px, 85vw) */
+  }
+  75% {
+    transform: translate(0vw, 90vh) rotate(360deg); /* 0, min(1200px, 90vw) */
+  }
+  100% {
+    transform: translate(0vh, 0vw); /* 0, 0 */
+  }
+}

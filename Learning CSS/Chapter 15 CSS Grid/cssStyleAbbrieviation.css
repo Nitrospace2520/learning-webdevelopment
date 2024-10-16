@@ -1,0 +1,13 @@
+.css-abrevations {
+  /* ? 'display' Abbrevation */
+  display: block; /*  <- db */
+  display: flex; /*  <- df */
+  display: grid; /* <- dg */
+
+  /* ? 'margin' Abbrevation */
+  margin: 1px; /* <- m1 */
+  margin: 2rem; /* <- m2rem */
+  margin: 10%; /* <- m10p */
+
+  /* ? 'border' Abbrevation */
+}

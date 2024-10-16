@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  height: auto;
+}
+img {
+  display: block; /* By default img elements are inline so we can change this by display: block*/
+}
+body h1.titlebar {
+  text-align: center;
+}
+/* ! Styling our first exmple:- *
+.example1 {
+  border: 1px solid #b22222;
+}
+.example1 img {
+  width: 15%;
+  height: auto;
+} 
+*/
+/* ! Styling our example 02: Profile-Picture *
+.profile {
+  border-bottom: 1px solid #b22222;
+  padding: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+
+  /* ? Lets's update the background **
+  background-color: #ffe4c4;
+  /* background-image: url(Images/circuit-7955446_640.png); **
+  background-image: url(Images/himalyas-8053173_640.jpg);
+  /* background-repeat: no-repeat; **
+  /* background-repeat: repeat; **
+  /* background-size: contain; **
+  background-size: cover;
+  background-position: bottom right;
+}
+.profile .profile-picture {
+  width: 15%;
+  height: auto;
+}
+.profile .profile-picture img {
+  width: 100%;
+  height: auto;
+  padding: 3px;
+  border: 2px double #1d0360;
+  min-width: 100px;
+  border-radius: 50%;
+}
+.profile .my-caption {
+  font-size: 400%;
+  color: aliceblue;
+  text-shadow: 2px 2px 5px #1d0360;
+
+  /* background-color: hsla(240, 70%, 28%, 0.172);
+  padding: 2rem;
+  border-radius: 25px 0;
+  text-align: center; **
+}
+.profile .my-caption .nowrap {
+  white-space: nowrap;
+}
+.profile-picture .offscreen {
+  position: absolute;
+  left: -1000px;
+}
+*/
+/* ! Example 03: only using css */
+body {
+  background-color: #f0f8ff;
+  min-height: 100vh;
+  background-image: url(./Images/lion-8096155_640.png),
+    linear-gradient(to top, #00f, #0f0, #f00);
+  background-repeat: repeat-y, no-repeat;
+  background-position: right, center;
+  background-size: 25%, auto;
+  /* background-size: cover; **/
+}
+
+/* ! Example 04: */
+.example-4 p {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18rem;
+  font-weight: 800;
+  background-image: url(./Images/warnemunde-8079731_640.jpg);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

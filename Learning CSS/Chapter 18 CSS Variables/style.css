@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+  /* COLOR */
+  --BGCOLOR: #00008b;
+  --DARK-COLOR: #000;
+  --WHITE-COLOR: #f5f5f5;
+  --GRAY-COLOR: #696767;
+  --PADDING: clamp(1rem, 2.5vh, 2rem);
+  /* FONT */
+  --FRONTFAMILY: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --FONT-SIZE-SMALL: clamp(1.25rem, 3vh, 1.75rem);
+  --FONT-SIZE: clamp(1.5rem, 4vh, 2rem);
+
+  /* BACKGROUND IMAGE */
+  --BGIMAGE: radial-gradient(var(--WHITE-COLOR), var(--BGCOLOR));
+
+  /* BOX SHADOW */
+  --BOXSHADOW: 0px 2px 15px 4px var(--DARK-COLOR);
+
+  /* TODO: For square class */
+  --SQUARE-BORDER: 5px solid var(--WHITE-COLOR);
+  --SQUARE-RADIUS: min(3rem, 20%);
+  --SQUARE-PADDING: min(5rem, 10%);
+  --SQUARE-BGCOLOR: #000024;
+  --SQUARE-SIZE: min(5rem, 40px);
+}
+
+/* //TODO: CSS DARK MODE */
+@media (prefers-color-scheme: light) {
+  /* do 'light' -> 'dark'*/
+  :root {
+    --BGIMAGE: radial-gradient(var(--WHITE-COLOR), var(--SQUARE-BGCOLOR));
+    --BGCOLOR: var(--DARK-COLOR);
+    --WHITE-COLOR: var(--GRAY-COLOR);
+  }
+  .square--different {
+    --SQUARE-BGCOLOR: var(--GRAY-COLOR);
+  }
+  footer,
+  header {
+    color: #fff;
+  }
+}
+body {
+  font-size: var(--FONT-SIZE);
+  min-height: 100vh;
+  font-family: --var(--FRONTFAMILY);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--BGCOLOR);
+  background-image: var(--BGIMAGE);
+}
+header {
+  background-color: var(--BGCOLOR);
+  position: sticky;
+  top: 0;
+  line-height: clamp(3.5rem, 7vh, 4rem);
+  display: grid;
+  place-content: center;
+  grid-template-columns: 100%;
+  text-align: center;
+  border-bottom: 2px solid var(--BGCOLOR);
+  color: var(--WHITE-COLOR);
+}
+nav {
+  background-color: var(--WHITE-COLOR);
+  box-shadow: var(--BOXSHADOW);
+  color: var(--DARK-COLOR);
+}
+footer {
+  background-color: var(--BGCOLOR);
+  color: var(--WHITE-COLOR);
+  line-height: clamp(3.5rem, 7vh, 4rem);
+  position: sticky;
+  bottom: 0;
+  display: grid;
+  place-content: center;
+  border-top: 1px solid var(--WHITE-COLOR);
+}
+main {
+  /*? Style for CSS Variables  **
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  gap: min(10px, 3rem); */
+  /*? Style for CSS Functions *
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  /* gap: clamp(1.5rem, 3vh, 2.5rem); */
+  /*? CSS Grid Functions */
+  padding: var(--PADDING);
+  flex-grow: 1;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(4, minmax(100px, 300px));
+  gap: min(2vh, 20px);
+}
+
+/* ? Sytle of CSS Variables **/
+.square--different {
+  --SQUARE-BGCOLOR: var(--WHITE-COLOR);
+  --SQUARE-BORDER: 5px solid var(--GRAY-COLOR);
+}
+.square {
+  font-size: var(--SQUARE-SIZE);
+  border: var(--SQUARE-BORDER);
+  padding: var(--SQUARE-PADDING);
+  background-color: var(--SQUARE-BGCOLOR);
+  border-radius: var(--SQUARE-RADIUS);
+  box-shadow: var(--BOXSHADOW);
+  display: grid;
+  place-content: center;
+  margin-bottom: min(2.5vh, 10px);
+}
+section a:any-link {
+  color: var(--BGCOLOR);
+}
+section :is(a:focus, a:hover) {
+  filter: brightness(360%);
+  /* filter: hue-rotate(270deg); */
+}
+.content {
+  margin-top: min(10px, 2.5vh);
+}
+/* ? CSS Styling for css functions  */
+main section {
+  flex-grow: 1;
+  padding: var(--PADDING);
+  font-size: var(--FONT-SIZE);
+}
+main aside {
+  font-size: var(--FONT-SIZE-SMALL);
+  padding: var(--PADDING);
+  font-style: italic;
+  background-color: rgba(128, 128, 128, 0.511);
+  color: var(--WHITE-COLOR);
+}
+.tooltip {
+  /* text-decoration: underline dashed #ffd700; */
+  border-bottom: 1px dashed #ffd700;
+  position: relative;
+}
+.tooltip:hover::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  white-space: nowrap;
+  top: -1.5rem;
+  background-color: var(--DARK-COLOR);
+  padding: 0.5rem;
+  border-radius: min(15%, 7px);
+}
+@media screen and (min-width: 564px) {
+  main {
+    flex-flow: row wrap;
+  }
+  main section {
+    width: calc(70% - 5px);
+  }
+  main aside {
+    width: calc(30% - 5px);
+    padding-right: 1rem;
+  }
+}
