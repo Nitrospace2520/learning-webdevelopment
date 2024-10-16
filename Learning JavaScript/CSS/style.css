@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+/* ! Use upto Error and Error Handling 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: black;
+  color: whitesmoke;
+}
+div.middle {
+  text-align: center;
+  margin-top: 49vh;
+} 
+*/
+/* ! Use for DOM *
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 100vw;
+  height: 48px;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #fff;
+  z-index: 2;
+  background-color: #000;
+  color: #fff;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding-top: 48px;
+}
+
+.view1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: lightgray;
+  color: #000;
+}
+
+.view1 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  color: #fff;
+  margin: 10px;
+}
+
+.view2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  background-color: darkblue;
+  color: #fff;
+}
+/* section:nth-child(0) */
+/* ! Use for JavaScript Even Listeners */
+nav {
+  background-color: #00ffaa;
+  padding: 0.5rem;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #4f4e4e;
+  color: #fff;
+  min-height: 100vh;
+}
+.view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.black h2 {
+  padding: 0.7rem;
+  text-align: center;
+}
+.view:nth-child(2),
+.view:nth-child(1) {
+  display: none;
+}
+input,
+label,
+button {
+  font-size: 1.5rem;
+}
+/* ? Classes for event listener as classLists */
+.darkblue {
+  border: 2px solid #00008b;
+  background-color: #00008b;
+  padding: 5rem;
+  margin: 10%;
+}
+.black {
+  background-color: black;
+  padding: 5rem;
+}
+.teal {
+  padding: 5rem;
+  background-color: #008080;
+}
+.height100 {
+  height: 100px;
+}

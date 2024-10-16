@@ -1,0 +1,48 @@
+/* .container {
+  border: 2px solid red;
+  width: 100%;
+  height: 50vh;
+  /* ! using Flex:-
+  display: flex;
+  justify-content: center;
+  align-items: center; **
+  /* ! using padding property (WRONG)
+  padding: 500px 500px 500px 50px; **
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  /* ! using margin property:-
+  margin: 47vh 50%; **
+}
+ */
+
+/* ! Styling the table:- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+table {
+  border: 2px solid black;
+  margin: 3rem;
+}
+caption {
+  border: 2px solid black;
+  font-weight: 700;
+  background-color: black;
+  color: antiquewhite;
+  padding: 1rem;
+}
+thead th,
+tbody td,
+tbody th {
+  padding: 1rem;
+  border: 1px solid firebrick;
+  text-align: center;
+}

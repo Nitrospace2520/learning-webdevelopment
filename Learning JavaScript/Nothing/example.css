@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* padding: 5rem 10rem; */
+  color: whitesmoke;
+  background-color: black;
+  font-size: 2rem;
+  font-family: sans-serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+input,
+button {
+  font-size: 1.5rem;
+}
+.make-counter label {
+  display: block;
+  font-size: 5rem;
+  text-align: center;
+}
+.make-counter {
+  display: inline-block;
+  text-align: center;
+}
+.making-game input.play-game {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border: 1px solid rgb(19, 19, 219);
+  background-color: rgb(17, 106, 185);
+  margin-left: 40px;
+}
+div.is-play {
+  display: none;
+}
