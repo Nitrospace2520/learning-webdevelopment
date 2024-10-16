@@ -1,0 +1,14 @@
+body {
+  background-color: black;
+  color: whitesmoke;
+}
+table,
+tr,
+th,
+td,
+caption {
+  border: 1px solid darkblue;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  padding: 0.5rem;
+}

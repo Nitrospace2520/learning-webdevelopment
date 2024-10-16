@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Flow Academy is a platform to learn about space and astronomy. We provide online and offline courses, workshops, and internships to help you understand the universe."
+    />
+    <meta
+      name="keywords"
+      content="space, astronomy, courses, workshops, internships, universe, blackhole, wormhole, aliens, UFOs"
+    />
+    <meta name="author" content="Flow Academy" />
+    <meta name="robots" content="index, follow" />
+    <title>Flow Academy</title>
+    <link
+      rel="shortcut icon"
+      href="./images/universe.png"
+      type="image/x-icon"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      header,
+      nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #333;
+        color: white;
+        padding: 0.5rem;
+        gap: 1rem;
+        margin: 0;
+        list-style-type: none;
+      }
+      header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+      main section {
+        padding-top: 3.6rem;
+      }
+      form {
+        border: 1px solid #333;
+        padding: 1rem;
+        border-radius: 1rem;
+        /* max-width: 90%; */
+      }
+      form,
+      form div {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      form div label span {
+        color: red;
+      }
+      form div input,
+      form div textarea {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid #333;
+      }
+      button {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid #333;
+        background-color: #333;
+        color: white;
+        cursor: pointer;
+      }
+      div.links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+      }
+      #home {
+        padding-top: 2.7rem;
+      }
+      #home h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      img {
+        display: block;
+        /* margin: 0 auto; */
+        border-radius: 1rem;
+        max-width: 356px;
+        max-height: 480px;
+      }
+      .online-courses {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 0.1rem;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <section class="logo">
+        <a href="#home">
+          <img loading="lazy" src="images/space.jpg" alt="logo" width="100" />
+        </a>
+      </section>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h1>Get Your Best Courses</h1>
+        <div>
+          <p>Learn about the blackhole</p>
+          <figure>
+            <img
+              loading="lazy"
+              src="images/backhole.png"
+              alt="blackhole"
+              width="100%"
+              usemap="#img-map"
+            />
+            <map name="img-map">
+              <area
+                shape="circle"
+                coords="200,200,100"
+                href="https://www.youtube.com/watch?v=kOEDG3j1bjs&t=2s"
+                alt="Go to Youtube to watch video"
+                target="_blank"
+              />
+            </map>
+            <figcaption>Blackhole</figcaption>
+          </figure>
+        </div>
+      </section>
+      <hr />
+      <section id="about">
+        <h2>About Us</h2>
+        <p>
+          We are a team of experts in the field of space and astronomy. We
+          provide the best courses for you to learn about the universe.
+        </p>
+        <p>
+          Our courses are designed to help you understand the complex concepts
+          of space and astronomy in a simple and easy way.
+        </p>
+        <p>
+          Our courses are available online and offline. You can also attend our
+          workshops and internships to get hands-on experience.
+        </p>
+        <div class="links">
+          <a
+            href="https://www.youtube.com/@Actualspace78"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button>Visit Youtube</button>
+          </a>
+          <a
+            href="https://youtube.com/playlist?list=PL7aXC0jU4Qk5Q6GhqvpVOvJZQrpd3JLtH&feature=shared"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button>Browse Courses</button>
+          </a>
+        </div>
+        <div class="course-content">
+          <h3>Our Courses</h3>
+          <ul>
+            <li>
+              <label for="astronomy">Introduction to Astronomy: </label>
+              <progress id="astronomy" value="50" max="100">50%</progress>
+            </li>
+            <li>
+              <label for="blackhole">Blackholes and Wormholes: </label>
+              <progress id="blackhole" value="70" max="100">70%</progress>
+            </li>
+            <li>
+              <label for="space">Life in Space: </label>
+              <progress id="space" value="80" max="100">80%</progress>
+            </li>
+            <li>
+              <label for="universe">Universe and Galaxies: </label>
+              <progress id="universe" value="90" max="100">90%</progress>
+            </li>
+            <li>
+              <label for="alien">Aliens and UFOs: </label>
+              <progress id="alien" value="60" max="100">60%</progress>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+          <li class="online-courses">
+            Online Courses
+            <figure>
+              <a
+                href="https://www.youtube.com/watch?v=0rHUDWjR5gg"
+                target="_blank"
+              >
+                <img
+                  loading="lazy"
+                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.cOL_t031NStEqbHoK0-YfAHaEK%26pid%3DApi&f=1&ipt=b7b7e9841505ab94069ebe6b4d1a1e065aa051a3acb75fdb3530cc197e3e9664&ipo=images"
+                  alt="online courses"
+                  width="100%"
+                />
+              </a>
+              <figcaption>Introduction to Astronomy</figcaption>
+            </figure>
+            <figure>
+              <a
+                href="https://www.youtube.com/watch?v=PtA7O3AOCPU"
+                target="_blank"
+              >
+                <img
+                  loading="lazy"
+                  src="https://www.thetechoutlook.com/wp-content/uploads/2023/02/Black-Hole-vs-Worm-Hole.jpg"
+                  alt="online courses"
+                  width="100%"
+                />
+              </a>
+              <figcaption>Blackholes and Wormholes</figcaption>
+            </figure>
+            <figure>
+              <a
+                href="https://www.youtube.com/watch?v=-Y04Zic1-r4"
+                target="_blank"
+              >
+                <img
+                  loading="lazy"
+                  src="https://scitechdaily.com/images/Astrobiology-Alien-Life-Concept.jpg"
+                  alt="online courses"
+                  width="100%"
+                />
+              </a>
+              <figcaption>Life in Space</figcaption>
+            </figure>
+            <figure>
+              <a
+                href="https://www.youtube.com/watch?v=937stSQMr64"
+                target="_blank"
+              >
+                <img
+                  loading="lazy"
+                  src="https://www.wallpaperflare.com/static/87/981/130/space-planet-universe-galaxy-wallpaper.jpg"
+                  alt="online courses"
+                  width="100%"
+                />
+              </a>
+              <figcaption>Universe and Galaxies</figcaption>
+            </figure>
+            <figure>
+              <a
+                href="https://www.youtube.com/watch?v=fWi_h5PVh7I"
+                target="_blank"
+              >
+                <img
+                  loading="lazy"
+                  src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/0384667056a6dcee3a15e2a040f394ed5eabda4ca54bed9338a30e651b664b03._RI_.jpg"
+                  alt="online courses"
+                  width="100%"
+                />
+              </a>
+              <figcaption>Aliens and UFOs</figcaption>
+            </figure>
+          </li>
+          <li>Offline Courses</li>
+          <li>Workshops</li>
+          <li>Internships</li>
+        </ul>
+      </section>
+      <hr />
+      <section id="blogs" class="blogs">
+        <h2>Our Blogs</h2>
+        <ol>
+          <li>
+            <article>
+              <h3>Introduction to Astronomy</h3>
+              <p>
+                Astronomy is the study of celestial objects such as stars,
+                planets, comets, and galaxies. It is one of the oldest sciences
+                and has been practiced by civilizations around the world for
+                thousands of years.
+              </p>
+              <p>
+                The invention of the telescope in the 17th century
+                revolutionized astronomy and allowed scientists to observe the
+                universe in greater detail. Today, astronomers use powerful
+                telescopes and satellites to study the cosmos.
+              </p>
+              <div>
+                <audio controls loop>
+                  <source
+                    src="https://int.nyt.com/data/rd/Spatial-Audio/Guide/01_Main/everglades_mach1v2.opus"
+                    type="audio/ogg"
+                  />
+                </audio>
+                <br />
+                <a
+                  href="https://www.youtube.com/watch?v=kOEDG3j1bjs&t=2s"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button>Read More</button>
+                </a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Blackholes and Wormholes</h3>
+              <p>
+                Blackholes are the most mysterious objects in the universe. They
+                are formed when a massive star collapses under its own gravity.
+                The gravity of a blackhole is so strong that not even light can
+                escape from it.
+              </p>
+              <p>
+                Wormholes are theoretical passages through space-time that could
+                create shortcuts for long journeys across the universe. They are
+                also known as Einstein-Rosen bridges.
+              </p>
+              <a
+                href="https://www.sciencenews.org/blog/context/wormhole-black-hole-quantum-entanglement"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>Read More</button>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Life in Space</h3>
+              <p>
+                Life in space is a fascinating topic that has intrigued
+                scientists for centuries. The discovery of water on Mars and the
+                possibility of microbial life on other planets have raised hopes
+                of finding life beyond Earth.
+              </p>
+              <p>
+                The search for extraterrestrial life continues with missions to
+                Mars and other planets in our solar system. Scientists are also
+                studying the atmospheres of exoplanets to look for signs of
+                life.
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=PtA7O3AOCPU"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>Read More</button>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Universe and Galaxies</h3>
+              <p>
+                The universe is a vast expanse of space that contains billions
+                of galaxies, each with billions of stars. Galaxies are held
+                together by gravity and contain stars, planets, and other
+                celestial objects.
+              </p>
+              <p>
+                The study of galaxies and the universe has led to many
+                discoveries about the nature of space and time. Scientists are
+                still trying to understand the origins of the universe and the
+                forces that govern its evolution.
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=-Y04Zic1-r4"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>Read More</button>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Aliens and UFOs</h3>
+              <p>
+                Aliens and UFOs have captured the imagination of people around
+                the world for decades. The search for extraterrestrial life and
+                unidentified flying objects has led to many theories and
+                speculations.
+              </p>
+              <p>
+                Scientists are studying the atmospheres of exoplanets to look
+                for signs of life. They are also monitoring the skies for any
+                unusual objects that could be evidence of alien spacecraft.
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=937stSQMr64"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button>Read More</button>
+              </a>
+            </article>
+          </li>
+        </ol>
+      </section>
+      <hr />
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or feedback, feel free to contact us. We
+          would love to hear from you.
+        </p>
+        <div>
+          <form method="post">
+            <div class="form-content">
+              <label for="name">Name: <span>*</span></label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div class="form-content">
+              <label for="email">Email: <span>*</span> </label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div class="form-content">
+              <label for="message">Message: <span>*</span></label>
+              <textarea name="message" id="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29411.200684391748!2d88.34782877072882!3d22.86167446889885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f891c05d059fa9%3A0x516c5f246932de74!2sChandannagar%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1724185749716!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            title="Google Map of Chandannagar, West Bengal"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>l
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 Flow Academy</p>
+    </footer>
+  </body>
+</html>
