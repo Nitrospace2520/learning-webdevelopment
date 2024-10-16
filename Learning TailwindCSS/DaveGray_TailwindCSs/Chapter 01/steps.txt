@@ -1,0 +1,4 @@
+Step 01: npx tailwindcss init
+Step 02: change the tailwindcss.config.js's content to "./build/**/*.html" and add "@tailwindcss base; @tailwindcss components; @tailwindcss utilites; " to the main input css file
+Step 03: Run 'npx tailwindcss -i ./src/input.css -o ./build/css/output.css' every time one changed the input.css or just "npx tailwindcss -i ./src/input.css -o ./build/css/output.css --watch" one time.
+        
