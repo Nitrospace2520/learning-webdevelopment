@@ -1,0 +1,1 @@
+create a react app by "npx create-react-app 'nameofproject'"
