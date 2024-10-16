@@ -1,0 +1,23 @@
+{
+  "name": "connect_backend_with_frontend",
+  "version": "1.0.0",
+  "description": "the primary intension is to connect backend with frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "backend",
+    "frontend",
+    "express",
+    "node"
+  ],
+  "author": "Nirmalya Dhara",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
